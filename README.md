@@ -2,6 +2,7 @@
 *Spring Boot gives us a property called <b>server.port</b> which is used to change tomcat port number.<br/>
 *Spring Boot gives us a property called <b>server.session.timeout</b> which is used to set tomcat session timeout. <br/>
 *Spring Boot gives us a property called <b>spring.profiles.active</b> which is used to read environment properties based on active-profile under Spring Boot Environment <br/>
+*Spring Boot gives us a property called <b>spring.main.lazy-initialization</b> to tell spring to do lazy loading <br/>
 
 <b>application.properties</b>
 <br/>
@@ -13,7 +14,8 @@ server.session.timeout = 5000 // Session timeout in seconds
 <br/>
 spring.profiles.active=Dev
 <br/>
-
+spring.main.lazy-initialization=true
+<br/>
 
 <br/>
 Tomcat is the embedded default server coming with Spring Boot. To change the Tomcat to Jetty server, we should change the dependencies in pom.xml like below.
@@ -34,4 +36,11 @@ But if we want to set the server port as random port (Generally used when workin
 <b>application.properties</b>
 <br/>
 server.port=0
+<br/>
+
+Spring Framework has support for lazy bean initialisation since along ago. In spring by default; if the application context being refreshed, every bean in the context will be created, and its dependencies will be injected.If we enable Spring Boot Lazy Loading, the beans will not be created and it won’t be injected the dependencies while refreshing the application context.
+
+<b>application.properties</b>
+<br/>
+spring.main.lazy-initialization=true
 <br/>
