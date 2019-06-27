@@ -1,7 +1,7 @@
 *Spring Boot gives us a property called <b>server.context-path</b> which is used to change springboot context path. <br/>
 *Spring Boot gives us a property called <b>server.port</b> which is used to change tomcat port number.<br/>
 *Spring Boot gives us a property called <b>server.session.timeout</b> which is used to set tomcat session timeout. <br/>
-*Spring Boot gives us a property called <b>spring.profiles.active</b> which is used to read environment Properties based on active-profile under Spring Boot Environment <br/>
+*Spring Boot gives us a property called <b>spring.profiles.active</b> which is used to read environment properties based on active-profile under Spring Boot Environment <br/>
 
 <b>application.properties</b>
 <br/>
