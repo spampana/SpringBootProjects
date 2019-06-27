@@ -21,3 +21,14 @@ Tomcat is the embedded default server coming with Spring Boot. To change the Tom
    &lt;artifactId&gt;spring-boot-starter-jetty&lt;/artifactId&gt;
 &lt;/dependency&gt;
 </pre>
+
+<br/>
+
+Generally we can set the Spring boot server port by using server.port property in application properties file.
+But if we want to set the server port as random port (Generally used when working with micro-services) the server.port should be assigned with ‘0’ (Zero).So that spring boot will automatically pick the available ports from OS and assigns to the application.
+<br/>
+
+<b>application.properties</b>
+<br/>
+server.port=0
+<br/>
