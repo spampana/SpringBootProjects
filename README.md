@@ -8,3 +8,14 @@ server.port=8085
 <br/>
 server.context-path=/Basic_Spring_Boot
 <br/>
+
+
+<br/>
+Tomcat is the embedded default server coming with Spring Boot. To change the Tomcat to Jetty server, we should change the dependencies in pom.xml like below.
+<br/>
+<pre>
+&lt;dependency&gt;
+   &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+   &lt;artifactId&gt;spring-boot-starter-jetty&lt;/artifactId&gt;
+&lt;/dependency&gt;
+</pre>
