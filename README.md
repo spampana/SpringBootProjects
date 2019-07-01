@@ -61,3 +61,6 @@ public class Application {
   }
 }
 </pre>
+
+<br/>
+By default the in-memory ActiveMQ got enabled when we define ActiveMQ dependencies in pom.xml, As we are using external ActiveMQ instance we should disable it by saying <b>spring.activemq.in-memory=false</b> and <b>spring.activemq.pool.enable=false</b>
