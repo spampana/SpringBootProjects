@@ -23,7 +23,6 @@ spring.activemq.pool.enable=false<br/>
 
 <br/>
 Tomcat is the embedded default server coming with Spring Boot. To change the Tomcat to Jetty server, we should change the dependencies in pom.xml like below.
-<br/>
 <pre>
 &lt;dependency&gt;
    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
@@ -36,14 +35,13 @@ Tomcat is the embedded default server coming with Spring Boot. To change the Tom
 Generally we can set the Spring boot server port by using server.port property in application properties file.
 But if we want to set the server port as random port (Generally used when working with micro-services) the server.port should be assigned with ‘0’ (Zero).So that spring boot will automatically pick the available ports from OS and assigns to the application.
 <br/>
-
 <b>application.properties</b>
 <br/>
 server.port=0
 <br/>
 
 Spring Framework has support for lazy bean initialisation since along ago. In spring by default; if the application context being refreshed, every bean in the context will be created, and its dependencies will be injected.If we enable Spring Boot Lazy Loading, the beans will not be created and it won’t be injected the dependencies while refreshing the application context.
-
+<br/>
 <b>application.properties</b>
 <br/>
 spring.main.lazy-initialization=true
