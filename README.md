@@ -3,6 +3,8 @@
 *Spring Boot gives us a property called <b>server.session.timeout</b> which is used to set tomcat session timeout. <br/>
 *Spring Boot gives us a property called <b>spring.profiles.active</b> which is used to read environment properties based on active-profile under Spring Boot Environment <br/>
 *Spring Boot gives us a property called <b>spring.main.lazy-initialization</b> to tell spring to do lazy loading <br/>
+*Spring Boot gives us a property called <b>spring.activemq.in-memory=false</b> and <b>spring.activemq.pool.enable=false</b> to disabled InmemoryActiveMQ.By default the in-memory ActiveMQ got enabled when we define ActiveMQ dependencies in pom.xml<br/>
+
 
 <b>application.properties</b>
 <br/>
@@ -16,6 +18,8 @@ spring.profiles.active=Dev
 <br/>
 spring.main.lazy-initialization=true
 <br/>
+spring.activemq.in-memory=false<br/> 
+spring.activemq.pool.enable=false<br/>
 
 <br/>
 Tomcat is the embedded default server coming with Spring Boot. To change the Tomcat to Jetty server, we should change the dependencies in pom.xml like below.
