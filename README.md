@@ -18,8 +18,13 @@ spring.profiles.active=Dev
 <br/>
 spring.main.lazy-initialization=true
 <br/>
-spring.activemq.in-memory=false<br/> 
-spring.activemq.pool.enable=false<br/>
+spring.activemq.in-memory=false
+<br/> 
+spring.activemq.pool.enable=false
+<br/>
+active-mq-url=tcp://localhost:61616 // 61616 is the default port of Active MQ
+<br/>
+
 
 <br/>
 Tomcat is the embedded default server coming with Spring Boot. To change the Tomcat to Jetty server, we should change the dependencies in pom.xml like below.
