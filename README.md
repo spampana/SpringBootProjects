@@ -49,7 +49,6 @@ spring.main.lazy-initialization=true
 
 
 JVM will take the default time zone as the server’s time zone. For example, if the server is running on IST, then the JVM takes the IST time as default.In Spring boot we can quickly change/set this default timezone using java.util.TimeZone class like below.
-<br/>
 <pre>
 @SpringBootApplication
 public class Application {
