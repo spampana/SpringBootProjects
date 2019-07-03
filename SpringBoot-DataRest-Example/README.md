@@ -22,15 +22,19 @@ operations or even use any JPQL operations inside the ItemRepository like below 
 <br/>
 You can observe, there were two endpoints available /items with three different options (page, size, sort) and /profile which provides the application metadata.
 <br/>
+<br/>
 
 <b>Currently, there are no items in our database, let’s create some of them.</b>
+<br/>
 <img src="https://www.onlinetutorialspoint.com/wp-content/uploads/2019/05/Spring-Boot-Data-Rest-Example-4-min.png"/>
+<br/>
 <br/>
 
 
 <b>Getting all list of Items:</b>
 <br/>
 Now you can access all the available items using the http://localhost:8080/items/ endpoint.
+<br/>
 <pre>
 {
     "_embedded": {
@@ -81,11 +85,13 @@ Now you can access all the available items using the http://localhost:8080/items
     }
 </pre>
 <br/>
+<br/>
 On the above output, we can observe that, along with the items list, there is one more /search endpoint available. It is used to call the custom endpoints. Let’s try to access our custom endpoint getItemByCategory();
 <br/>
 
 
 <b>http://localhost:8080/items/search/findByCategory?category=Books</b>
+<br/>
 <img src="https://www.onlinetutorialspoint.com/wp-content/uploads/2019/05/Spring-Boot-DataRest-Example-5-min.png"/>
 <br/>
 
